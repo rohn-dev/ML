@@ -188,4 +188,4 @@ if best_model_name in ["Random Forest", "XGBoost"]:
     imp_df = pd.DataFrame({"feature": feature_names, "importance": importances})
     imp_df = imp_df.sort_values("importance", ascending=False).head(10)
     print("\nTop 10 most important features:")
-    print(imp_df.to_string(index=False))
+    print(imp_df.to_string(index=False))    
